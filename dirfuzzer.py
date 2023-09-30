@@ -166,10 +166,18 @@ mylist = ['cgi-bin',
 try:
     if __name__ == "__main__":
         def banner(target=False):
-            f = Figlet(font='larry3d')
+            dir_fuzzer_banner = """
+██████╗ ██╗██████╗ ███████╗██╗   ██╗███████╗███████╗███████╗██████╗ 
+██╔══██╗██║██╔══██╗██╔════╝██║   ██║╚══███╔╝╚══███╔╝██╔════╝██╔══██╗
+██║  ██║██║██████╔╝█████╗  ██║   ██║  ███╔╝   ███╔╝ █████╗  ██████╔╝
+██║  ██║██║██╔══██╗██╔══╝  ██║   ██║ ███╔╝   ███╔╝  ██╔══╝  ██╔══██╗
+██████╔╝██║██║  ██║██║     ╚██████╔╝███████╗███████╗███████╗██║  ██║
+╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+                                                                    
+            """
             v = Figlet(font='big')
             
-            print("\n"+Fore.RED + f.renderText('DirFuzzer')+ Fore.CYAN + "Github: https://github.com/rjsoheil")
+            print("\n"+Fore.RED + dir_fuzzer_banner + Fore.CYAN + "Github: https://github.com/rjsoheil")
             sleep(2)
             print(Fore.GREEN + v.renderText('Soheil  is here')+Fore.WHITE+"")
     
